@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff; /* ou toute autre couleur de fond nécessaire */
+    padding: 0 30px; 
+  
+  }
+  
+  .logo-container img {
+    height: 60px; /* ajustez selon vos besoins */
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 20px; /* espace entre les liens */
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #000; /* couleur du texte pour les liens */
+    font-weight: bold; /* gras pour les liens */
+    padding: 10px; /* espace autour du texte pour un meilleur clic */
+  }
+  
+
+  .social-icon {
+    display: inline-block;
+    width: 24px; /* largeur de l'icône */
+    height: 24px; /* hauteur de l'icône */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 20px; /* espace entre les icônes */
+  }
+  
+  .instagram {
+    background-image: url('../../images/instagram-icon.png');
+    width:"66px";
+    height: "66px"; 
+  }
+  
+  .youtube {
+    background-image: url('../../images/youtube-icon.png'); 
+  }
+  

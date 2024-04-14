@@ -1,0 +1,21 @@
+.feature-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .feature-item {
+    background-color: #fff; /* Ajuster selon le thème */
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-item h2 {
+    color: #333; /* Ajuster selon le thème */
+  }
+  
+  .feature-item p {
+    color: #666; /* Ajuster selon le thème */
+  }
+  

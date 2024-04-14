@@ -1,0 +1,28 @@
+.video-gallery {
+    padding: 20px;
+    background-color: #f8f8f8; /* Ajuster selon le thème */
+  }
+  
+  .videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .video {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .video p {
+    color: #333;
+  }
+  

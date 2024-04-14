@@ -1,0 +1,21 @@
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px; /* ou la hauteur selon votre design */
+    background-image: url('../../images/Art\ n\ clap\ HeroSection.png'); /* ajustez avec votre image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem; /* ajustez à votre design */
+  }
+  
+  .hero-section p {
+    font-size: 1.5rem; /* ajustez à votre design */
+  }
+  
