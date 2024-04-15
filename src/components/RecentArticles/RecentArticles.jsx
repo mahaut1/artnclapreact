@@ -1,11 +1,16 @@
 import React from 'react';
 import './RecentArticles.css';
+// Importez vos images ici
+import thumbnail1 from '../../images/scenariste.jpg';
+import thumbnail2 from '../../images/verrerie/dino.webp';
+import thumbnail3 from '../../images/';
 
 const RecentArticles = () => {
-  // Remplacer par des données dynamiques si nécessaire
+  // Utilisez les objets importés pour les vignettes
   const articles = [
-    { title: 'Article Title 1', thumbnail: '/path-to-thumbnail1.jpg' },
-    { title: 'Article Title 2', thumbnail: '/path-to-thumbnail2.jpg' },
+    { title: 'Découvrez le métier de scénariste', thumbnail: thumbnail1 },
+    { title: 'Découvrez le métier de verrier', thumbnail: thumbnail2 },
+    { title: 'Découvrez le métier d’enlumineur', thumbnail: thumbnail3 },
     // Ajouter d'autres articles
   ];
 
@@ -19,6 +24,9 @@ const RecentArticles = () => {
             <p>{article.title}</p>
           </div>
         ))}
+      </div>
+      <div className="read-more-container">
+        <button className="read-more" onClick={() => window.location.href='/articles'}>Lire plus</button>
       </div>
     </div>
   );

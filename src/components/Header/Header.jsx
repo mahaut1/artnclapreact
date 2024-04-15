@@ -1,11 +1,11 @@
 import React from 'react';
 import './Header.css'; // Assurez-vous d'avoir ce fichier CSS dans le même dossier.
-
+import logo from '../../images/logo.png'
 const Header = () => {
   return (
     <header className="header">
       <div className="logo-container">
-        <img src="../images/logo.png" alt="Art N Clap" /> {/* Assurez-vous que le chemin est correct */}
+        <img src= {logo} alt="Art N Clap" /> 
       </div>
       <nav className="navbar">
         <a href="#videos">Vidéos</a>

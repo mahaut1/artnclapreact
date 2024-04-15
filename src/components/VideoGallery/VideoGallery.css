@@ -1,28 +1,56 @@
 .video-gallery {
-    padding: 20px;
-    background-color: #f8f8f8; /* Ajuster selon le thème */
-  }
-  
-  .videos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  
-  .video {
-    background-color: #fff;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .video img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  .video p {
-    color: #333;
-  }
-  
+  margin: 0 auto;
+  max-width: 1200px; /* Ajustez la largeur maximale selon les besoins */
+  padding: 1rem;
+}
+
+.video-gallery h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Cela crée un espace entre les vidéos */
+  justify-content: center; /* Centrer les vidéos horizontalement */
+}
+
+.video {
+  flex: 1 1 300px; /* Les vidéos sont flexibles mais ne descendent pas en dessous de 300px */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrer le contenu des vidéos verticalement */
+}
+
+.video iframe {
+  width: 100%; /* L'iframe prend toute la largeur du conteneur .video */
+  height: auto; /* La hauteur est automatique pour maintenir l'aspect ratio */
+  aspect-ratio: 16 / 9; /* Ratio standard pour les vidéos YouTube */
+  border: none; /* Retire la bordure de l'iframe */
+}
+
+.video p {
+  margin-top: 0.5rem;
+}
+
+.more-videos-button {
+  display: flex;
+  justify-content: center; /* Centrer le bouton horizontalement */
+  margin-top: 2rem; /* Espace au-dessus du bouton */
+}
+
+.more-videos-button button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #db0b0b; /* Couleur d'arrière-plan du bouton, à ajuster */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Animation de fond lors du survol */
+}
+
+.more-videos-button button:hover {
+  background-color: #0056b3; /* Couleur d'arrière-plan du bouton au survol, à ajuster */
+}

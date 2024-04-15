@@ -1,0 +1,19 @@
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrer les articles */
+    gap: 1rem; /* Espacement entre les articles */
+    /* ... autres styles ... */
+  }
+  
+  .article {
+    width: calc(33.333% - 1rem); /* Ajustez cette valeur selon le nombre d'articles par ligne */
+    margin-bottom: 1rem; /* Espacement en dessous de l'article */
+    /* ... autres styles ... */
+  }
+  
+  .article img {
+    width: 100%; /* Les images prennent toute la largeur de .article */
+    height: auto; /* Pour maintenir le rapport d'aspect */
+    /* ... autres styles ... */
+  }

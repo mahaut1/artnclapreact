@@ -1,21 +1,44 @@
 .feature-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Espacement entre les éléments de caractéristique */
+    background-color: black; /* Couleur de fond de la section */
+    padding: 40px; /* Espacement autour du contenu */
   }
   
   .feature-item {
-    background-color: #fff; /* Ajuster selon le thème */
-    padding: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacement entre l'image et le texte */
+  }
+  .feature-item1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px; 
   }
   
-  .feature-item h2 {
-    color: #333; /* Ajuster selon le thème */
+  .feature-text {
+    color: white;
+    flex: 1;
+    padding: 20px;
+    /* background-color: #6c6868; */ /* Couleur de fond du texte */
+    border-radius: 8px; /* Arrondir les coins */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+   font-size: 25PX;/* Ombre portée pour la profondeur */
   }
   
-  .feature-item p {
-    color: #666; /* Ajuster selon le thème */
+  .feature-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .feature-image-container img {
+    width: 100%; /* ou une valeur fixe en px */
+    max-width: 500px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée pour la profondeur */
   }
   

@@ -4,8 +4,14 @@ import './VideoGallery.css';
 const VideoGallery = () => {
   // Remplacer par des données dynamiques si nécessaire
   const videos = [
-    { title: 'Video Title 1', thumbnail: '/path-to-thumbnail1.jpg' },
-    { title: 'Video Title 2', thumbnail: '/path-to-thumbnail2.jpg' },
+    { 
+      title: 'Video teaser Nicolas Laty, verrier', 
+      src: 'https://www.youtube.com/embed/KJrJt5OlnlM'
+    },
+    { 
+      title: 'Video Alexandre, dessinateur', 
+      src: 'https://www.youtube.com/embed/vwm_GMmO1_Q'
+    },
     // Ajouter d'autres vidéos
   ];
 
@@ -15,10 +21,23 @@ const VideoGallery = () => {
       <div className="videos">
         {videos.map((video, index) => (
           <div key={index} className="video">
-            <img src={video.thumbnail} alt={video.title} />
+            <iframe 
+              width="560" 
+              height="315" 
+              src={video.src} 
+              title={video.title} 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen
+            ></iframe>
             <p>{video.title}</p>
           </div>
         ))}
+       
+      </div>
+      <div className="more-videos-button">
+        <button onClick={() => window.location.href='/videos'}>Plus de vidéos</button>
       </div>
     </div>
   );
