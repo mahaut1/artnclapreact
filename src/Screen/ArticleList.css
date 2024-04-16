@@ -1,0 +1,45 @@
+/* ArticlesList.css */
+
+.articles-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .article-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .article-image {
+    border-radius: 50%;
+    width: 80px; /* Adjust based on your design */
+    height: 80px; /* Adjust based on your design */
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .article-content {
+    text-align: center;
+  }
+  
+  .article-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .article-description {
+    margin-bottom: 20px;
+  }
+  
+  .article-read-more {
+    text-decoration: none;
+    color: #000; /* Adjust to match your site's theme */
+    background-color: #f0f0f0; /* Light grey, adjust as needed */
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  

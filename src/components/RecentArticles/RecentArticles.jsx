@@ -2,8 +2,8 @@ import React from 'react';
 import './RecentArticles.css';
 // Importez vos images ici
 import thumbnail1 from '../../images/scenariste.jpg';
-import thumbnail2 from '../../images/verrerie/dino.webp';
-import thumbnail3 from '../../images/';
+import thumbnail2 from '../../images/dino.webp';
+import thumbnail3 from '../../images/enluminures compressé/Anastasia1.webp';
 
 const RecentArticles = () => {
   // Utilisez les objets importés pour les vignettes

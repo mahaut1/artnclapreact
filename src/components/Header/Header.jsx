@@ -1,19 +1,25 @@
 import React from 'react';
-import './Header.css'; // Assurez-vous d'avoir ce fichier CSS dans le même dossier.
-import logo from '../../images/logo.png'
+import { Link } from 'react-router-dom'; // Import Link
+import './Header.css';
+import logo from '../../images/logo.png';
+
 const Header = () => {
   return (
     <header className="header">
       <div className="logo-container">
-        <img src= {logo} alt="Art N Clap" /> 
+        <Link to="/">
+          <img src={logo} alt="Art N Clap" />
+        </Link>
       </div>
       <nav className="navbar">
-        <a href="#videos">Vidéos</a>
-        <a href="#articles">Articles</a>
-        <a href="#backstages">Backstages</a>
+        {/* Use Link for internal navigation */}
+        <Link to="/videos">Vidéos</Link>
+        <Link to="/articles">Articles</Link>
+        <Link to="/backstage">Backstage</Link>
+         {/* Assuming "Backstages" is a section on the same page */}
       </nav>
       <div className="social-media">
-        {/* Liens ou boutons pour les médias sociaux */}
+        {/* Keep external links as <a> tags */}
         <a href="#instagram" className="social-icon instagram"></a>
         <a href="#youtube" className="social-icon youtube"></a>
       </div>

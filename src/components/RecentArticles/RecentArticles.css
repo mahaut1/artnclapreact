@@ -1,9 +1,11 @@
 .articles {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centrer les articles */
-    gap: 1rem; /* Espacement entre les articles */
-    /* ... autres styles ... */
+    justify-content: center; 
+    gap: 1rem; 
+    background-color: black;
+    color: white;
+    font-size: 20px;
   }
   
   .article {
@@ -13,7 +15,19 @@
   }
   
   .article img {
-    width: 100%; /* Les images prennent toute la largeur de .article */
-    height: auto; /* Pour maintenir le rapport d'aspect */
-    /* ... autres styles ... */
+    width: 100%; 
+    height: auto; 
+  }
+  .read-more{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #db0b0b; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  }
+  .read-more-container{
+    background-color: black;
   }

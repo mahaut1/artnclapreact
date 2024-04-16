@@ -1,0 +1,13 @@
+/* ArticleDetail.css */
+
+.article-detail {
+    padding: 20px;
+  }
+  
+  .article-detail img {
+    width: 150px; /* Adjust size as needed */
+    border-radius: 50%; /* Circle shape */
+  }
+  
+ 
+  
