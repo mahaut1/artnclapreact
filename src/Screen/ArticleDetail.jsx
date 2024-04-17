@@ -1,19 +1,26 @@
 // ArticleDetail.js
 
 import React from 'react';
-import { useParams } from 'react-router-dom'; // To get the article ID from the URL
-import './ArticleDetail.css';
 
-const ArticleDetail = ({ articles }) => {
-  let { articleId } = useParams();
-  const article = articles.find((article) => article.id === parseInt(articleId));
+const ArticleDetail = ({ article }) => {
+  if (!article) {
+    return <div className="article-not-found">Article not found</div>; 
+  }
 
   return (
     <div className="article-detail">
-      <img src={article.image} alt={article.title} />
-      <h1>{article.title}</h1>
-      <p>{article.content}</p>
-      {/* Add additional article details here */}
+      <div className="article-header">
+        <img src={article.image} alt={article.title} className="article-image" />
+        <h1 className="article-title">{article.title}</h1>
+        <p className="article-description">{article.description}</p>
+      </div>
+      {article.content.map((contentSection, index) => (
+        <section key={index} className={`content-section ${index === 0 ? 'content-section-quote' : ''}`}>
+          <h2 className="content-subtitle">{contentSection.subtitle}</h2>
+          <p className="content-text">{contentSection.text}</p>
+        </section>
+      ))}
+      <button className="reduce-button">Réduire</button>
     </div>
   );
 };

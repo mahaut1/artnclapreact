@@ -1,0 +1,26 @@
+.backstage-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.backstage-section {
+    margin-bottom: 20px;
+}
+
+.backstage-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align items to the start of the flex line */
+    gap: 10px; /* Spacing between images */
+}
+
+.backstage-image-container {
+    display: flex; /* Ensures the images are in line */
+    width: calc(25% - 10px); /* Adjust width to manage 4 items per row subtracting the gap */
+}
+
+.imageBackstage {
+    width: 100%; /* Ensures the image fills its container */
+    height: auto; /* Keeps the aspect ratio of the image */
+}

@@ -1,13 +1,86 @@
 /* ArticleDetail.css */
 
-.article-detail {
-    padding: 20px;
-  }
-  
+
   .article-detail img {
-    width: 150px; /* Adjust size as needed */
+    width: 300px; /* Adjust size as needed */
     border-radius: 50%; /* Circle shape */
   }
-  
+   /* ArticleDetail.css */
+
+.article-detail {
+  font-family: 'Arial', sans-serif; /* Or any font you're using */
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.article-header .article-title {
+  font-size: 36px; /* Adjust the size as needed */
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.article-description {
+  margin-bottom: 1em;
+  font-size: 20px;
+}
+
+.content-section {
+  margin-bottom: 1em;
+  font-size: 20px;
+}
+
+.content-section-quote:before {
+  content: "“";
+  font-size: 80px; /* Adjust the size as needed */
+  line-height: 0;
+  vertical-align: -0.4em;
+  color: #ccc;
+}
+
+.content-section-quote .content-text:before {
+  content: "”";
+  font-size: 80px; /* Adjust the size as needed */
+  line-height: 0;
+  vertical-align: -0.4em;
+  color: #ccc;
+}
+
+.content-subtitle {
+  font-weight: bold;
+  font-size: 24px; /* Adjust the size as needed */
+}
+
+.content-text {
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.reduce-button {
+  display: block;
+  width: fit-content;
+  padding: 10px 20px;
+  margin: 20px auto;
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.reduce-button:hover {
+  background-color: #444;
+}
+
+.reduce-button:after {
+  content: '↑'; /* You can replace it with an icon */
+  display: inline-block;
+  margin-left: 8px;
+}
+
  
   

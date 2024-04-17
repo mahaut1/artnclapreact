@@ -12,13 +12,23 @@ const videos = [
   },
   {
     year: '2024',
-    title: 'Verrier',
+    title: 'Teaser Verrier',
     embedUrl: 'https://www.youtube.com/embed/KJrJt5OlnlM'
   },
   {
     year: '2023',
-    title: 'Another video title here',
+    title: 'Dessinateur',
     embedUrl: 'https://www.youtube.com/embed/vwm_GMmO1_Q'
+  },
+  {
+    year: '2024',
+    title: 'Verrier Nicolas Laty',
+    embedUrl: 'https://www.youtube.com/embed/MdSJ5eAvBNA'
+  },
+  {
+    year: '2024',
+    title: 'Enlumineur Anastasia Chassaing',
+    embedUrl: 'https://www.youtube.com/embed/N5uB2Jx_82k'
   },
   // ... more videos
 ];
