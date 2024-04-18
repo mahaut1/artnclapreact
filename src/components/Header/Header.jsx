@@ -16,12 +16,11 @@ const Header = () => {
         <Link to="/videos">Vidéos</Link>
         <Link to="/articles">Articles</Link>
         <Link to="/backstage">Backstage</Link>
-         {/* Assuming "Backstages" is a section on the same page */}
       </nav>
       <div className="social-media">
         {/* Keep external links as <a> tags */}
-        <a href="#instagram" className="social-icon instagram"></a>
-        <a href="#youtube" className="social-icon youtube"></a>
+        <a href="https://www.instagram.com/artnclap?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="blank" className="social-icon instagram"></a>
+        <a href="https://www.youtube.com/@Artnclap" target="blank"className="social-icon youtube"></a>
       </div>
     </header>
   );

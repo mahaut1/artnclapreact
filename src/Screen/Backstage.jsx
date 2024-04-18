@@ -16,7 +16,18 @@ import enluminure from "../images/enluminures compressé/enluminure.webp";
 import equipeTournage1 from "../images/enluminures compressé/equipe tournage3.webp";
 import equipeTournage2 from "../images/enluminures compressé/equipe tournage2.webp";
 import anastasiaBureau1 from "../images/enluminures compressé/anastasia bureau 2.webp";
-
+import Charles from "../images/peintre/Charles.jpg"
+import doublePortrait from "../images/peintre/double portrait.jpg"
+import miseEnPlace from "../images/peintre/MiseEnPlace.jpg"
+import DjangoSOurire from "../images/peintre/DjangoSourire2.jpg"
+import groupeClara from "../images/peintre/groupeClaraSourire.jpg"
+import reglagePlan from "../images/peintre/reglagePlan.jpg"
+import salonContreChamp from "../images/peintre/salonContreChamp.jpg"
+import discussion from "../images/Scenariste/discussion.jpg"
+import papias from "../images/Scenariste/Papias.jpg"
+import reglageCam from "../images/Scenariste/reglageCam.jpg"
+import manonDos from "../images/Scenariste/ManonDos.jpg"
+import charlesDos from "../images/Scenariste/CharlesDos.jpg"
 
 const backstageData = [
   {
@@ -41,6 +52,29 @@ const backstageData = [
       equipeTournage1,
       equipeTournage2,
       anastasiaBureau1,
+    ],
+  },
+  {
+    category: 'Backstage Peintre',
+    images: [
+      Charles,
+      doublePortrait,
+      miseEnPlace, 
+      DjangoSOurire,
+      groupeClara,
+      reglagePlan,
+      salonContreChamp,
+    ],
+  },
+  {
+    category: 'Backstage Scénariste',
+    images: [
+      discussion,
+      papias,
+      reglageCam,
+      papias,
+      manonDos,
+      charlesDos
     ],
   },
 ];

@@ -1,9 +1,9 @@
 import React from 'react';
 import './Footer.css';
 // Import your social media icons here
-import instagramIcon from '../../images/instagram-icon.png'; // Replace with your actual file path
-import youtubeIcon from '../../images/youtube-icon.png'; // Replace with your actual file path
-
+import instagramIcon from '../../images/instagram-icon.png';
+import youtubeIcon from '../../images/youtube-icon.png'; 
+import logo from "../../images/LOGO ART N CLAP ORIGINAL 1.png"
 const Footer = () => {
   return (
     <footer className="footer">
@@ -13,7 +13,7 @@ const Footer = () => {
      
       </div>
       <div className="footer-logo">
-        <img src='/path-to-your-logo.png' alt="Art N Clap" /> {/* Replace with your actual file path */}
+        <img src={logo} alt="Art N Clap" /> 
       </div>
       <div className="footer-rights">
         <p>&copy; 2024 ART N CLAP. All Rights Reserved.</p>

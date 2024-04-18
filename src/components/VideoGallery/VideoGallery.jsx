@@ -22,8 +22,8 @@ const VideoGallery = () => {
         {videos.map((video, index) => (
           <div key={index} className="video">
             <iframe 
-              width="560" 
-              height="315" 
+              width="100%" 
+              height="600px" 
               src={video.src} 
               title={video.title} 
               frameborder="0" 

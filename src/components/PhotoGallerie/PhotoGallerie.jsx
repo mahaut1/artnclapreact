@@ -1,12 +1,12 @@
 import React from 'react';
 import './PhotoGallerie.css';
 // Import your image files here
-import image1 from '../../images/Mask group(1).png';
-import image2 from '../../images/Mask group(2).png';
-import image3 from '../../images/Mask group(3).png';
-import image4 from '../../images/Mask group(4).png';
-import image5 from '../../images/Mask group(5).png';
-import image6 from '../../images/Mask group(6).png';
+import image1 from '../../images/verrerie/meduse.webp';
+import image2 from '../../images/verrerie/sulfure.webp';
+import image3 from '../../images/verrerie/Manon dino.webp';
+import image4 from '../../images/verrerie/emerveillement.webp';
+import image5 from '../../images/enluminures compressé/anastasia bureau1.webp';
+import image6 from '../../images/peintre/DjangoSourire2.jpg';
 
 const Gallery = () => {
   // Array of images

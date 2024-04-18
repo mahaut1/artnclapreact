@@ -1,6 +1,5 @@
 .video-gallery {
   margin: 0 auto;
-  max-width: 1200px; /* Ajustez la largeur maximale selon les besoins */
   padding: 1rem;
 }
 
@@ -12,8 +11,8 @@
 .videos {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem; /* Cela crée un espace entre les vidéos */
-  justify-content: center; /* Centrer les vidéos horizontalement */
+  gap: 1rem; 
+  justify-content: center; 
 }
 
 .video {
@@ -26,7 +25,7 @@
 .video iframe {
   width: 100%; /* L'iframe prend toute la largeur du conteneur .video */
   height: auto; /* La hauteur est automatique pour maintenir l'aspect ratio */
-  aspect-ratio: 16 / 9; /* Ratio standard pour les vidéos YouTube */
+  aspect-ratio: 16 / 9;  /* Ratio standard pour les vidéos YouTube */
   border: none; /* Retire la bordure de l'iframe */
 }
 

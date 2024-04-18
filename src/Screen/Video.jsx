@@ -50,15 +50,14 @@ const Videos = () => {
           <h2>{year}</h2>
           {videosByYear[year].map((video, index) => (
             <div key={index} className="video-container">
-              <iframe
-                width="560"
-                height="315"
-                src={video.embedUrl}
-                title={video.title}
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-              </iframe>
+             <iframe
+  width="70%"
+  height="800px" 
+  src={video.embedUrl}
+  title={video.title}
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowFullScreen
+></iframe>
             </div>
           ))}
         </div>
