@@ -6,7 +6,7 @@ const ArticleDetail = ({ article }) => {
   if (!article) {
     return <div className="article-not-found">Article not found</div>; 
   }
-
+console.log(article)
   return (
     <div className="article-detail">
       <div className="article-header">
@@ -20,6 +20,7 @@ const ArticleDetail = ({ article }) => {
           <p className="content-text">{contentSection.text}</p>
         </section>
       ))}
+<img src={article.imageQuote} alt={article.title} className="article-image-quote" />
       <button className="reduce-button">Réduire</button>
     </div>
   );

@@ -83,4 +83,7 @@
 }
 
  
-  
+.article-image-quote {
+  max-width: 100%;
+  height: auto;
+}

@@ -22,6 +22,7 @@ const articles = [
       // Ajoutez d'autres sections si nécessaire
     ],
     image: "/Alexandre_cercle.png",
+    imageQuote:"/Papias.jpg",
     link: "/articles/alexandre-papias"
   },
   {
