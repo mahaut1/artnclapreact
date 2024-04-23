@@ -1,4 +1,5 @@
 // ArticleDetail.js
+import { Link } from 'react-router-dom'; // make sure you have react-router-dom installed
 
 import React from 'react';
 
@@ -20,8 +21,7 @@ console.log(article)
           <p className="content-text">{contentSection.text}</p>
         </section>
       ))}
-<img src={article.imageQuote} alt={article.title} className="article-image-quote" />
-      <button className="reduce-button">Réduire</button>
+<Link to={`/articles/`} className="article-read-more">Revenir aux autres articles</Link>
     </div>
   );
 };
