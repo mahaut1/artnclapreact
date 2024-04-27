@@ -73,7 +73,7 @@ const articles = [
     ],
     image: "/Anastasia_cercle.png", 
     image1:"/AnastasiaQuote.png",
-    quote:"lorem ipsum",
+    quote:"Quand on est heureux soit-même, on rend les autres heureux",
     link: "/articles/anastasia-chassaing"
   },
   // ... more articles

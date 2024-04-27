@@ -1,0 +1,47 @@
+/* Videos.css */
+
+.videos-page {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+  }
+  
+  .video-year-section {
+    border-top: 1px solid #ccc; 
+  }
+  
+  .video-year-section h2 {
+    font-size: 2rem; 
+    text-align: center; 
+    padding: 20px 0; 
+    background-color: #000; 
+    color: #fff; 
+  }
+  
+  .video-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+    margin-bottom: 20px; 
+  }
+  
+  iframe {
+    width: 100%; 
+    height: 600px;
+    border: none; 
+  }
+  .featured-video-container {
+    width: 100%; 
+    height: 500px;
+    margin-bottom: 20px; 
+  }
+  
+  .featured-video-container iframe {
+    width: 100%;  
+    height: auto; 
+    max-height: 500px; 
+  }
+  
