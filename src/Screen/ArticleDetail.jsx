@@ -1,27 +1,36 @@
 // ArticleDetail.js
-import { Link } from 'react-router-dom'; // make sure you have react-router-dom installed
-
+import { Link } from 'react-router-dom';
 import React from 'react';
-
+import './ArticleDetail.css'
 const ArticleDetail = ({ article }) => {
   if (!article) {
     return <div className="article-not-found">Article not found</div>; 
   }
-console.log(article)
+
   return (
     <div className="article-detail">
-      <div className="article-header">
-        <img src={article.image} alt={article.title} className="article-image" />
+      <div className="header-container">
         <h1 className="article-title">{article.title}</h1>
-        <p className="article-description">{article.description}</p>
+        <img src={article.image} alt={article.title} className="article-image" />
       </div>
-      {article.content.map((contentSection, index) => (
-        <section key={index} className={`content-section ${index === 0 ? 'content-section-quote' : ''}`}>
-          <h2 className="content-subtitle">{contentSection.subtitle}</h2>
-          <p className="content-text">{contentSection.text}</p>
-        </section>
-      ))}
-<Link to={`/articles/`} className="article-read-more">Revenir aux autres articles</Link>
+      <p className="article-description">{article.description}</p>
+      <div className="lower-container">
+        <div className="left-column">
+          <img src={article.image1} alt={article.title} className="article-image1" />
+          <div className="quote-area">
+            <p className="quote-text">"{article.quote}"</p>
+          </div>
+        </div>
+        <div className="right-column">
+          {article.content.map((contentSection, index) => (
+            <section key={index} className={`content-section ${index === 0 ? 'content-section-first' : ''}`}>
+              <h2 className="content-subtitle">{contentSection.subtitle}</h2>
+              <p className="content-text">{contentSection.text}</p>
+            </section>
+          ))}
+        </div>
+      </div>
+      <Link to={`/articles/`} className="article-read-more">Revenir aux autres articles</Link>
     </div>
   );
 };

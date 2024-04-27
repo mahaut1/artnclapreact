@@ -1,74 +1,101 @@
-/* ArticleDetail.css */
-
-
-  .article-detail img {
-    width: 300px; /* Adjust size as needed */
-    border-radius: 50%; /* Circle shape */
-  }
-   /* ArticleDetail.css */
-
 .article-detail {
-  font-family: 'Arial', sans-serif; /* Or any font you're using */
+  font-family: 'Arial', sans-serif;
   color: #333;
-  max-width: 800px;
+  max-width: 1200px; /* Adjusted for wider layout */
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
-.article-header .article-title {
-  font-size: 36px; /* Adjust the size as needed */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures the title and image can wrap on smaller screens */
+}
+
+.article-title {
+  flex: 1 1 60%; /* Adjust as needed */
+  font-size: 36px;
   font-weight: bold;
-  margin-bottom: 0.5em;
+}
+
+.article-image {
+  flex: 0 1 150px; /* Adjust as needed */
+  border-radius: 50%;
+  align-self: flex-start;
+  margin-left: 20px; /* Added margin for spacing */
 }
 
 .article-description {
-  margin-bottom: 1em;
   font-size: 20px;
+  margin-top: 1em;
+  flex-basis: 100%; /* Forces the description to the next line */
+}
+
+.lower-container {
+  display: flex;
+  margin-top: 1em;
+}
+
+.left-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.right-column {
+  flex: 2; 
+  margin-left: 20px; 
+}
+
+.article-image1 {
+  width: 100%;
+  max-width: 500px; /* Adjust as needed */
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.quote-area {
+  background-color: #f0f0f0;
+  padding: 1em;
+  border-left: 5px solid #000;
+  margin-bottom: 1em;
+}
+
+.quote-text {
+  font-style: italic;
+  color: #555;
 }
 
 .content-section {
   margin-bottom: 1em;
-  font-size: 20px;
 }
-
 
 .content-subtitle {
   font-weight: bold;
-  font-size: 24px; /* Adjust the size as needed */
+  font-size: 24px;
 }
 
 .content-text {
-  line-height: 1.5;
   font-size: 20px;
 }
 
-.reduce-button {
-  display: block;
-  width: fit-content;
-  padding: 10px 20px;
-  margin: 20px auto;
-  font-size: 16px;
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.reduce-button:hover {
-  background-color: #444;
-}
-
-.reduce-button:after {
-  content: '↑'; /* You can replace it with an icon */
-  display: inline-block;
-  margin-left: 8px;
-}
-
- 
-.article-image-quote {
-  max-width: 100%;
-  height: auto;
+@media (max-width: 768px) {
+  .header-container,
+  .lower-container {
+    flex-direction: column;
+  }
+  
+  .article-image {
+    align-self: center; /* Center image on smaller screens */
+    margin-left: 0;
+  }
+  
+  .right-column {
+    margin-left: 0;
+  }
 }

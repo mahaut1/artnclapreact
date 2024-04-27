@@ -32,6 +32,8 @@ const articles = [
       // Ajoutez d'autres sections si nécessaire
     ],
     image: "/Alexandre_cercle.png",
+    image1:"/papias1.jpg",
+    quote:"lorem ipsum",
     link: "/articles/alexandre-papias"
   },
   {
@@ -49,7 +51,9 @@ const articles = [
       },
       // Ajoutez d'autres sections si nécessaire
     ],
-    image: "/Nico_cercle.png", // Replace with the actual path to the image
+    image: "/Nico_cercle.png", 
+    image1:"/nico_banc1.webp",
+    quote:"lorem ipsum",
     link: "/articles/nicolas-laty"
   },
   {
@@ -67,7 +71,9 @@ const articles = [
       },
       // Ajoutez d'autres sections si nécessaire
     ],
-    image: "/Anastasia_cercle.png", // Replace with the actual path to the image
+    image: "/Anastasia_cercle.png", 
+    image1:"/AnastasiaQuote.png",
+    quote:"lorem ipsum",
     link: "/articles/anastasia-chassaing"
   },
   // ... more articles

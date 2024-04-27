@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom'; // make sure you have react-router-dom installed
-import './ArticleList.css'; // your custom CSS file for styling
+import './ArticleList.css'; 
 import './ArticleDetail'
 const articles = [
   // Array of article objects
@@ -22,7 +22,7 @@ const articles = [
       // Ajoutez d'autres sections si nécessaire
     ],
     image: "/Alexandre_cercle.png",
-    imageQuote:"/Papias.jpg",
+    image1:"/Papias.jpg",
     link: "/articles/alexandre-papias"
   },
   {
@@ -38,9 +38,10 @@ const articles = [
         subtitle: "La patte de l'artiste",
         text: "Sa marque de fabrique, ses yeux 'cartoonesque' et ses couleurs saturées qui insufflent à ses oeuvres une aura amusante qui saura vous renvoyer en enfance. De ses inspirations aux découvertes fortuites, Nicolas Laty nous offre un aperçu intime de la vie quotidienne dans l'atelier du verrier. Les techniques spécifiques, des soufflages délicats aux détails minutieux de la gravure, prennent vie sous ses explications captivantes",
       },
-      // Ajoutez d'autres sections si nécessaire
+    
     ],
-    image: "/Nico_cercle.png", // Replace with the actual path to the image
+    image: "/Nico_cercle.png", 
+    image1:"/nico_banc.webp",
     link: "/articles/nicolas-laty"
   },
   {
@@ -56,12 +57,13 @@ const articles = [
         subtitle: "Un processus délicat",
         text: " Le processus d'enluminure est bien plus qu'une simple application de couleurs vives; il nécéssite une compréhension profonde de l'histoire de l'art, une minutie extrême et une connaissance des techniques anciennes et de l'utilisation experte des pigments. Au cours de la présentation, Anastasia Chassaing partage son parcours artistique, révélant les secrets de sa palette et les sources d'inspiration qui alimentent son travail. Chaque détail minutieux prend vie sous sa narration, offrant au public un aperçu de l'engagement passionné derrière chaque création. La maitrîse, aliiant tradition et innovation, se dévoile à travers des anecdotes sur les défils surmontés et les triomphes artistiques. Fusion entre le passé et le présent, illustrant l'importance de préserver un savoir-faire artistique précieux et d'honorer la richesse de la tradition. ",
       },
-      // Ajoutez d'autres sections si nécessaire
+      
     ],
-    image: "/Anastasia_cercle.png", // Replace with the actual path to the image
+    image: "/Anastasia_cercle.png", 
+    image1:"/AnastasiaQuote.png",
     link: "/articles/anastasia-chassaing"
   },
-  // ... more articles
+
 ];
 
 const ArticlesList = () => {
