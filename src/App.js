@@ -27,7 +27,7 @@ const articles = [
       },
       {
         subtitle: "Pourquoi un scénariste?",
-        text: "Nous pensons que lorsqu'une pièce de théâtre captive le public, il est essentiel de se pencher sur l'esprit brillant qui l'a conçue. L'auteur d'une pièce de théâtre joue un rôle crucial dans la narration, dévoilant son imagination débordante et sa compréhension profonde de la condition humaine. Lors de la présentation de l'auteur ",
+        text: "Nous pensons que lorsqu'une pièce de théâtre captive le public, il est essentiel de se pencher sur l'esprit brillant qui l'a conçue. L'auteur d'une pièce de théâtre joue un rôle crucial dans la narration, dévoilant son imagination débordante et sa compréhension profonde de la condition humaine. Lors de la présentation de l'auteur, nous mettons l’accent sur son parcours, les sources d'inspiration et comment il procède ainsi que des aspects moins connus comme les modes de rémunération. Vous découvrirez au travers de ce court documentaire les dessous de cette profession aussi belle que complexe, qui distille les rêves aux travers des proses et nous espérons qu’il saura devenir moteur de vocation pour certains d’entre vous.",
       },
       // Ajoutez d'autres sections si nécessaire
     ],
