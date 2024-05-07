@@ -16,3 +16,8 @@
     height: auto; /* Maintain aspect ratio */
   }
   
+  @media (max-width: 768px) {
+    .gallery-item {
+      width: calc(50% - 10px); /* Two items per row */
+    }
+  }

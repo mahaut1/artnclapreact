@@ -42,3 +42,18 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée pour la profondeur */
   }
   
+  @media (max-width: 768px) {
+    .feature-item, .feature-item1 {
+      flex-direction: column-reverse; /* Stack image on top of text */
+      align-items: center; /* Center-align the content for aesthetics */
+      text-align: center; /* Center-align the text for better readability on mobile */
+    }
+  
+    .feature-text, .feature-image-container {
+      width: 100%; /* Full width for both text and images */
+    }
+  
+    .feature-image-container img {
+      max-width: 100%; /* Allow image to expand to container's full width */
+    }
+  }
