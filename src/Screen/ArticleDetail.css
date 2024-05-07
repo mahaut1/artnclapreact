@@ -17,7 +17,6 @@
 }
 
 .article-title {
-  flex: 1 1 60%; /* Adjust as needed */
   font-size: 40px;
   font-weight: bold;
 }

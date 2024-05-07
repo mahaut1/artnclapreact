@@ -51,7 +51,7 @@
 }
 
 .article-read-more {
-  font-size: 30px;
+  font-size: 25px;
   text-decoration: none;
   color: white;  /* Text color set to white */
   padding: 10px 20px;
@@ -67,4 +67,23 @@
 
 .article-read-more:hover {
   background-color: darkred; /* Darker red on hover for visual feedback */
+}
+
+@media (max-width: 768px) {
+  .article-header,
+  .lower-container {
+    flex-direction: column;
+  }
+  
+  .article-image {
+    align-self: center; /* Center image on smaller screens */
+    margin-left: 0;
+    width:200px;
+    height: 200px;;
+  
+  }
+  
+  .right-column {
+    margin-left: 0;
+  }
 }

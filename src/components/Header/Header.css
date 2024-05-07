@@ -1,51 +1,98 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff; 
-    height: 100px; 
-    padding: 15px;
-  }
-  
-  .logo-container img {
-    height: 100px; 
-    background-image: url('../../images/logo.png');
-  }
-  
-  .navbar {
-    display: flex;
-    gap: 20px; 
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: #000; 
-    font-weight: bold; 
-    padding: 10px; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #fff; /* Keeping the header background white */
+  position: relative;
+  height: 100px;
+  z-index: 10;
+}
 
-  .social-icon {
-    display: inline-block;
-    width: 66px; /* largeur de l'icône */
-    height: 66px; /* hauteur de l'icône */
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 20px; /* espace entre les icônes */
+.logo-container img {
+  height: 100px; /* Adjust size as necessary */
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333; /* Dark color for visibility on white background */
+}
+
+.navbar {
+  display: flex;
+  gap: 10px; /* Increase gap for better spacing */
+  font-size: 14px; /* Adjust font size for readability */
+}
+
+.navbar.open {
+  display: flex;
+  flex-direction: column; /* Stack links vertically */
+  position: fixed;
+  top: 60px; /* Adjust based on your header's height */
+  left: 0;
+  right: 0;
+  background-color: #fff; /* Keep menu background white */
+  padding: 20px;
+  z-index: 12;
+  border-top: 2px solid #e50914; /* Add a subtle red border at the top for style */
+  transition: all 0.3s ease; /* Smooth transition for opening/closing */
+}
+
+.navbar a {
+  color: #333; /* Dark color for visibility on white background */
+  padding: 10px 20px; /* Padding for larger touch area */
+  text-decoration: none; /* No underlines */
+  display: block; /* Make links block to occupy full line */
+  font-size: 30px;
+  font-weight: bold; 
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 66px; /* largeur de l'icône */
+  height: 66px; /* hauteur de l'icône */
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 20px; /* espace entre les icônes */
+}
+
+.instagram {
+  background-image: url('../../images/instagram-icon.png'); /* Update with actual path */
+}
+
+.youtube {
+  background-image: url('../../images/youtube-icon.png'); /* Update with actual path */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show hamburger icon on mobile */
   }
-  
-  .instagram {
-    background-image: url('../../images/instagram-icon.png');
-    width:"66px";
-    height: "66px"; 
+
+  .navbar,
+  .social-media {
+    display: none; /* Hide navbar and social media icons initially */
   }
-  
-  .youtube {
-    background-image: url('../../images/youtube-icon.png'); 
+
+  .navbar.open,
+  .social-media {
+    display: flex; /* Display navbar and social media icons when menu is open */
+    flex-direction: column;
+    margin-top: 5px;;
   }
-  .logo-container{
-    width: 100px;
+  .social-icon{
+    width:40px;
+    height:40px;
   }
-  
+  .logo-container img {
+    height: 80px; /* Adjust size as necessary */
+  }
+}
