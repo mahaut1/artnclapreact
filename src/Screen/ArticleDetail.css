@@ -18,7 +18,7 @@
 
 .article-title {
   flex: 1 1 60%; /* Adjust as needed */
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .article-description {
-  font-size: 40px;
+  font-size: 30px;
   margin-top: 1em;
   flex-basis: 100%; /* Forces the description to the next line */
 }
