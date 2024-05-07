@@ -24,3 +24,9 @@
     width: 100%; /* Ensures the image fills its container */
     height: auto; /* Keeps the aspect ratio of the image */
 }
+
+@media (max-width: 768px) {
+    .backstage-image-container {
+      width: calc(50% - 10px); /* Adjust to two items per row on smaller screens */
+    }
+}

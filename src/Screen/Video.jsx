@@ -34,51 +34,44 @@ const videos = [
 ];
 
 const Videos = () => {
-  const [featuredVideo, setFeaturedVideo] = useState(null);
+  const [featuredVideo, setFeaturedVideo] = useState(videos[0]); // Default to the first video initially
+
   const videosByYear = videos.reduce((acc, video) => {
-    if (!acc[video.year]) {
-      acc[video.year] = [];
-    }
-    acc[video.year].push(video);
+    (acc[video.year] = acc[video.year] || []).push(video);
     return acc;
   }, {});
 
   const handleVideoSelect = (video) => {
-    console.log("Video selected:", video.title);
     setFeaturedVideo(video);
   };
-
 
   return (
     <div className="videos-page">
       {featuredVideo && (
         <div className="featured-video-container">
           <iframe
-            width="100%"
-            height="500px" 
             src={featuredVideo.embedUrl}
             title={featuredVideo.title}
-            key={featuredVideo.embedUrl}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
+            frameBorder="0"
+            width="100%"
+            height="500px"
           ></iframe>
         </div>
       )}
+
       {Object.keys(videosByYear).sort().reverse().map(year => (
         <div key={year} className="video-year-section">
           <h2>{year}</h2>
-          {videosByYear[year].map((video, index) => (
-            <div key={index} className="video-container" onClick={() => handleVideoSelect(video)}>
-              <iframe
-                width="100%"
-                height="250px" // Adjust height as needed
-                src={video.embedUrl}
-                title={video.title}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
-          ))}
+          <div className="video-previews">
+            {videosByYear[year].map((video, index) => (
+              <div key={index} className="video-preview" onClick={() => handleVideoSelect(video)}>
+                <img src={`https://img.youtube.com/vi/${video.embedUrl.split('/').pop()}/0.jpg`} alt={video.title} />
+                <p>{video.title}</p>
+              </div>
+            ))}
+          </div>
         </div>
       ))}
     </div>

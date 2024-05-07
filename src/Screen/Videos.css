@@ -1,47 +1,81 @@
-/* Videos.css */
-
+/* Root Container for the Videos Page */
 .videos-page {
-    max-width: 1200px; 
-    margin: 0 auto;
-    padding: 20px;
-    display: grid;
-    gap: 20px;
+  max-width: 1800px; /* Maximum width to prevent overly wide layouts */
+  margin: auto; /* Center the content horizontally */
+  padding: 20px; /* Padding around the content */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between video sections */
+}
+
+/* Container for the Featured Video */
+.featured-video-container {
+  width: 100%; /* Full width to utilize the container size */
+  height: auto; /* Auto height based on content */
+  position: relative; /* Relative positioning for positioning children absolutely */
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+/* Styling for the iframe within the featured video container */
+iframe {
+  position: absolute; /* Absolute positioning to fit the container */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0; /* No border for the iframe */
+}
+
+/* Styling for each yearly section */
+.video-year-section {
+  border-top: 3px solid #ccc; /* Visual separator */
+}
+
+/* Title for each video year section */
+.video-year-section h2 {
+  font-size: 1.5rem; /* Large font size for visibility */
+  text-align: center; /* Center the text */
+  padding: 10px 15px; /* Padding for aesthetics */
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  margin-top: 20px; /* Space above each section */
+}
+
+/* Flex container for video previews */
+.video-previews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Gap between previews */
+  justify-content: center; /* Center align the previews */
+}
+
+/* Individual video preview container */
+.video-preview {
+  width: calc(50% - 10px); /* Adjust for two columns layout */
+  cursor: pointer; /* Indicates clickable items */
+  text-align: center; /* Center text and images */
+}
+
+/* Styling for thumbnails in video previews */
+.video-preview img {
+  width: 100%; /* Full width to utilize the container */
+  display: block; /* Ensure images don't have extra space below */
+}
+
+/* Styling for text under video previews */
+.video-preview p {
+  color: white; /* White text for contrast */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  padding: 10px; /* Padding for text */
+}
+
+/* Responsive adjustments for smaller devices */
+@media (max-width: 768px) {
+  .video-preview {
+    width: 100%; /* Full width on mobile devices */
   }
-  
-  .video-year-section {
-    border-top: 1px solid #ccc; 
-  }
-  
+
   .video-year-section h2 {
-    font-size: 2rem; 
-    text-align: center; 
-    padding: 20px 0; 
-    background-color: #000; 
-    color: #fff; 
+    font-size: 1.2rem; /* Smaller font size for smaller screens */
   }
-  
-  .video-container {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    gap: 10px; 
-    margin-bottom: 20px; 
-  }
-  
-  iframe {
-    width: 100%; 
-    height: 600px;
-    border: none; 
-  }
-  .featured-video-container {
-    width: 100%; 
-    height: 500px;
-    margin-bottom: 20px; 
-  }
-  
-  .featured-video-container iframe {
-    width: 100%;  
-    height: auto; 
-    max-height: 500px; 
-  }
-  
+}
