@@ -1,4 +1,4 @@
-/* Root Container for the Videos Page */
+/* Scope all styles to the videos-page to avoid affecting other pages */
 .videos-page {
   max-width: 1800px; /* Maximum width to prevent overly wide layouts */
   margin: auto; /* Center the content horizontally */
@@ -8,16 +8,14 @@
   gap: 20px; /* Space between video sections */
 }
 
-/* Container for the Featured Video */
-.featured-video-container {
+.videos-page .featured-video-container {
   width: 100%; /* Full width to utilize the container size */
   height: auto; /* Auto height based on content */
   position: relative; /* Relative positioning for positioning children absolutely */
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
 }
 
-/* Styling for the iframe within the featured video container */
-iframe {
+.videos-page iframe {
   position: absolute; /* Absolute positioning to fit the container */
   top: 0;
   left: 0;
@@ -26,13 +24,11 @@ iframe {
   border: 0; /* No border for the iframe */
 }
 
-/* Styling for each yearly section */
-.video-year-section {
+.videos-page .video-year-section {
   border-top: 3px solid #ccc; /* Visual separator */
 }
 
-/* Title for each video year section */
-.video-year-section h2 {
+.videos-page .video-year-section h2 {
   font-size: 1.5rem; /* Large font size for visibility */
   text-align: center; /* Center the text */
   padding: 10px 15px; /* Padding for aesthetics */
@@ -41,29 +37,25 @@ iframe {
   margin-top: 20px; /* Space above each section */
 }
 
-/* Flex container for video previews */
-.video-previews {
+.videos-page .video-previews {
   display: flex;
   flex-wrap: wrap;
   gap: 10px; /* Gap between previews */
   justify-content: center; /* Center align the previews */
 }
 
-/* Individual video preview container */
-.video-preview {
+.videos-page .video-preview {
   width: calc(50% - 10px); /* Adjust for two columns layout */
   cursor: pointer; /* Indicates clickable items */
   text-align: center; /* Center text and images */
 }
 
-/* Styling for thumbnails in video previews */
-.video-preview img {
+.videos-page .video-preview img {
   width: 100%; /* Full width to utilize the container */
   display: block; /* Ensure images don't have extra space below */
 }
 
-/* Styling for text under video previews */
-.video-preview p {
+.videos-page .video-preview p {
   color: white; /* White text for contrast */
   background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
   padding: 10px; /* Padding for text */
@@ -71,11 +63,11 @@ iframe {
 
 /* Responsive adjustments for smaller devices */
 @media (max-width: 768px) {
-  .video-preview {
+  .videos-page .video-preview {
     width: 100%; /* Full width on mobile devices */
   }
 
-  .video-year-section h2 {
+  .videos-page .video-year-section h2 {
     font-size: 1.2rem; /* Smaller font size for smaller screens */
   }
 }
