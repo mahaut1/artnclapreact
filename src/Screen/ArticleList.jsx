@@ -71,12 +71,13 @@ const ArticlesList = () => {
     <div className="articles-list">
       {articles.map(article => (
         <div key={article.id} className="article-item">
-          <img src={article.image} alt={article.title} className="article-image" />
-          <div className="article-content">
+          <div className="article-header">
             <h2 className="article-title">{article.title}</h2>
+            <img src={article.image} alt={article.title} className="article-image" />
+          </div>
+          <div className="article-content">
             <p className="article-description">{article.description}</p>
             <Link to={`/articles/${article.id}`} className="article-read-more">En savoir plus</Link>
-
           </div>
         </div>
       ))}
@@ -85,3 +86,4 @@ const ArticlesList = () => {
 };
 
 export default ArticlesList;
+

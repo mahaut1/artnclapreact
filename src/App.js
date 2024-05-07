@@ -53,7 +53,7 @@ const articles = [
     ],
     image: "/Nico_cercle.png", 
     image1:"/nico_banc1.webp",
-    quote:"lorem ipsum",
+    quote:"Il faut continuer et voir le plus d'artisans possibles.",
     link: "/articles/nicolas-laty"
   },
   {

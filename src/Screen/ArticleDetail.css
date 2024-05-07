@@ -18,19 +18,18 @@
 
 .article-title {
   flex: 1 1 60%; /* Adjust as needed */
-  font-size: 36px;
+  font-size: 50px;
   font-weight: bold;
 }
 
 .article-image {
-  flex: 0 1 150px; /* Adjust as needed */
   border-radius: 50%;
   align-self: flex-start;
   margin-left: 20px; /* Added margin for spacing */
 }
 
 .article-description {
-  font-size: 20px;
+  font-size: 40px;
   margin-top: 1em;
   flex-basis: 100%; /* Forces the description to the next line */
 }
@@ -78,11 +77,11 @@
 
 .content-subtitle {
   font-weight: bold;
-  font-size: 26px;
+  font-size: 35px;
 }
 
 .content-text {
-  font-size: 22px;
+  font-size: 30px;
 }
 
 @media (max-width: 768px) {
