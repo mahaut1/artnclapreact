@@ -55,7 +55,7 @@ const Videos = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             frameBorder="0"
-            width="100%"
+            width="90%"
             height="500px"
           ></iframe>
         </div>
