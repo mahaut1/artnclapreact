@@ -38,7 +38,7 @@ const videos = [
 ];
 
 const Videos = () => {
-  const [featuredVideo, setFeaturedVideo] = useState(videos[0]); // Default to the first video initially
+  const [featuredVideo, setFeaturedVideo] = useState(videos[3]); // Default to the first video initially
 
   const videosByYear = videos.reduce((acc, video) => {
     (acc[video.year] = acc[video.year] || []).push(video);

@@ -5,8 +5,8 @@ const VideoGallery = () => {
   // Remplacer par des données dynamiques si nécessaire
   const videos = [
     { 
-      title: 'Video teaser Nicolas Laty, verrier', 
-      src: 'https://www.youtube.com/embed/KJrJt5OlnlM'
+      title: 'Video Nicolas Laty, verrier', 
+      src: 'https://www.youtube.com/embed/MdSJ5eAvBNA'
     },
     { 
       title: 'Video Alexandre Papias, scénariste', 
