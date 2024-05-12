@@ -30,7 +30,11 @@ const videos = [
     title: 'Enlumineur Anastasia Chassaing',
     embedUrl: 'https://www.youtube.com/embed/N5uB2Jx_82k'
   },
-
+  {
+    year: '2024',
+    title: 'Scénariste Alexandre Papias',
+    embedUrl: 'https://www.youtube.com/embed/cDQg5s-XNf0'
+  },
 ];
 
 const Videos = () => {

@@ -9,8 +9,8 @@ const VideoGallery = () => {
       src: 'https://www.youtube.com/embed/KJrJt5OlnlM'
     },
     { 
-      title: 'Video Alexandre, dessinateur', 
-      src: 'https://www.youtube.com/embed/vwm_GMmO1_Q'
+      title: 'Video Alexandre Papias, scénariste', 
+      src: 'https://www.youtube.com/embed/cDQg5s-XNf0'
     },
     // Ajouter d'autres vidéos
   ];
